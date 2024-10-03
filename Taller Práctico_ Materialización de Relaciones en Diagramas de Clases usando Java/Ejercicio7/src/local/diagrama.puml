@@ -1,0 +1,27 @@
+@startuml
+class Empleado{
+    - nombre : String
+
+    + getNombre() : String
+}
+
+class Proyecto{
+    - nombre : String
+
+    + getNombre() : String
+}
+
+class Asignacion{
+    - empleados : List<Empleado>
+    - proyectos : List<Proyecto>
+
+    + agregarEmpleado(Empleado empleado) : void
+    + agregarProyecto(Proyecto proyecto) : void
+    + mostrarEmpleados() : void
+    + mostrarProyectos() : void
+    + mostrarAsignaciones() : void
+}
+
+Empleado "1" --o "0.." Asignacion : participa
+Proyecto "1" --o "0.." Asignacion : asignado a
+@enduml

@@ -1,0 +1,12 @@
+@startuml
+Class Animal{
+    # String nombre
+    # int edad
+}
+
+Class Perro{
+    - String raza
+}
+
+Perro --> Animal : es un
+@enduml

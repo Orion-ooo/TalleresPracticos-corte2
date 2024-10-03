@@ -1,0 +1,12 @@
+@startuml
+Class Impresora {
+    + void imprimir()
+}
+
+Class Documento {
+    + String nombre
+    + comenzarTarea()
+}
+
+Impresora --> Documento : Usa
+@enduml

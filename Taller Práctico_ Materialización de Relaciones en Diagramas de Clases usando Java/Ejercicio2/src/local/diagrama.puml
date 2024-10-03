@@ -1,0 +1,11 @@
+@startuml
+interface Nadador {
+    + void nadar()
+}
+
+Class Pez {
+    + String nombre
+}
+
+Pez --> Nadador : Es un
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+Class Computadora{
+    - Procesador procesador;
+    + Computadora();
+    + void computadoraEncendida();
+    + void encenderProcesador();
+    + void usarProcesador();
+}
+
+Class Procesador{
+    + void procesadorMarcha();
+    + void procesadorUso();
+}
+
+Computadora *-- Procesador : Composición
+@enduml

@@ -1,0 +1,16 @@
+@startuml
+Class Estudiante {
+    + String nombre;
+}
+
+Class Aula {
+    + Arraylist<Estudiante> listado;
+
+    + void agregarEstudiante();
+    + List<Estudiante> getEstudiante();
+    + List<Estudiante> getEstudiante();
+    + void mostrarEstudiantes();
+}
+
+Aula o-- Estudiante : contiene
+@enduml

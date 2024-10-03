@@ -1,0 +1,19 @@
+@startuml
+Class Equipo{
+    - String nombre;
+    - Jugador jugador;
+
+    + setJugador(Jugador jugador) : void
+    + getJugador() : Jugador
+}
+
+Class Jugador{
+    - String nombre;
+    - Equipo equipo;
+
+     + setEquipo(Equipo equipo) : void
+     + getEquipo() : Equipo
+}
+
+Equipo "1" <--> "1" Jugador : se relaciona
+@enduml
