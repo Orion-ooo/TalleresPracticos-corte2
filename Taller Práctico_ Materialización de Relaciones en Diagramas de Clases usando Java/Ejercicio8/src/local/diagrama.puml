@@ -1,0 +1,15 @@
+@startuml
+class Biblioteca{
+    - libros : List<Libros>
+
+    + añadirLibros(Libros libro) : void
+    + mostrarLibros() : void
+}
+
+class Libros{
+    - nombre : String
+
+    + getNombre() : String
+}
+Biblioteca "1" -- "*" Libros : contiene
+@enduml

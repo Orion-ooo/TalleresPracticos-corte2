@@ -22,6 +22,6 @@ class Asignacion{
     + mostrarAsignaciones() : void
 }
 
-Empleado "1" --o "0.." Asignacion : participa
-Proyecto "1" --o "0.." Asignacion : asignado a
+Empleado "1" --o "*" Asignacion : participa
+Proyecto "1" --o "*" Asignacion : asignado a
 @enduml
