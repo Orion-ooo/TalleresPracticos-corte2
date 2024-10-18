@@ -4,6 +4,7 @@ package local;
 public class NewMain {
 
     public static void main(String[] args) {
+        
         Biblioteca biblioteca = new Biblioteca();
         
         Libros libro1 = new Libros("Bajo la misma estrella");
