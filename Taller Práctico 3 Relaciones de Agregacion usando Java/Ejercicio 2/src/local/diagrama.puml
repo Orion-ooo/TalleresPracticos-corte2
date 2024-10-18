@@ -1,0 +1,22 @@
+@startuml
+class Puerta {
+    - abierta : boolean
+    - ubicacion : String
+    + Puerta(ubicacion : String)
+    + abrir() : void
+    + cerrar() : void
+    + estaAbierta() : boolean
+    + getUbicacion() : String
+}
+
+class Casa {
+    - puerta : Puerta
+    + Casa(ubicacionPuerta : String)
+    + asignarPuerta(ubicacion : String) : void
+    + cambiarPuerta(nuevaUbicacion : String) : void
+    + eliminarPuerta() : void
+    + mostrarUbicacionPuerta() : void
+}
+
+Casa *-- Puerta : contiene
+@enduml
