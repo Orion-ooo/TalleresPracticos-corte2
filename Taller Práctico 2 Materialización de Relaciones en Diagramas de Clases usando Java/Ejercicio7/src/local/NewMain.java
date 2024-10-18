@@ -20,7 +20,6 @@ public class NewMain {
 
         asignacion.mostrarEmpleados();
         asignacion.mostrarProyectos();
-
         asignacion.mostrarAsignaciones();
     }
 }
