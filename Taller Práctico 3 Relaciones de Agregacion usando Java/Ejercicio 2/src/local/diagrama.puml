@@ -1,11 +1,7 @@
 @startuml
 class Puerta {
-    - abierta : boolean
     - ubicacion : String
     + Puerta(ubicacion : String)
-    + abrir() : void
-    + cerrar() : void
-    + estaAbierta() : boolean
     + getUbicacion() : String
 }
 
